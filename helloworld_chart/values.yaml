@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: strm/helloworld-http
+  pullPolicy: IfNotPresent
+  tag: latest
+
+podLabels: {
+  app: myapp
+}
+
+service:
+  type: ClusterIP
+  port: 80

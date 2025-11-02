@@ -1,0 +1,6 @@
+apiVersion: v2
+name: helloworld-chart
+description: A Hello-world Helm chart
+type: application
+version: 1.0.0
+appVersion: "1.16.0"
