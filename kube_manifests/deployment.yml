@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: hello-world:latest
+        image: strm/helloworld-http:latest
         ports:
         - containerPort: 80
