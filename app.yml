@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Ryad3/simple-argocd-playground.git
+    targetRevision: HEAD
+    path: helloworld_chart
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
